@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 body{
-  background-image: radial-gradient(circle at 52% 94%, rgba(169, 169, 169,0.04) 0%, rgba(169, 169, 169,0.04) 50%,rgba(199, 199, 199,0.04) 50%, rgba(199, 199, 199,0.04) 100%),radial-gradient(circle at 96% 98%, rgba(61, 61, 61,0.04) 0%, rgba(61, 61, 61,0.04) 50%,rgba(201, 201, 201,0.04) 50%, rgba(201, 201, 201,0.04) 100%),radial-gradient(circle at 93% 97%, rgba(227, 227, 227,0.04) 0%, rgba(227, 227, 227,0.04) 50%,rgba(145, 145, 145,0.04) 50%, rgba(145, 145, 145,0.04) 100%),radial-gradient(circle at 79% 52%, rgba(245, 245, 245,0.04) 0%, rgba(245, 245, 245,0.04) 50%,rgba(86, 86, 86,0.04) 50%, rgba(86, 86, 86,0.04) 100%),linear-gradient(90deg, rgb(210, 9, 198),rgb(25, 38, 118));
+    background-image: radial-gradient(circle, #1c7fc2 0%, #009cdc 28%, #0d9ade 32%, #011844 100%)
 }
 *{
   margin:0;
@@ -18,7 +18,7 @@ form{
 }
 .container{
   width: 50%;;
-  background-color: #77ACF1;
+  /* background-color: #77ACF1; */
   margin: 5rem auto;
   padding: 2rem;
   border-radius: 10px;
@@ -33,15 +33,15 @@ input, .btn{
 }
 .btn{
   padding: .5rem 1rem;
-  background-color:#F0EBCC ;
-  color:#04009A ;
-  border:2px solid #04009A ;
-  cursor:pointer;
+  background-color: white;
+  color:#011844 ;
+  border:2px solid;
+  cursor: pointer;
   transition:.3s;
 }
 .btn:hover{
   transform: translateY(-3px);
-  background-color:#04009A ;
+  background-color:#0d9ade ;
   color:#fff ;
 }
 .weather{
@@ -50,11 +50,14 @@ input, .btn{
   justify-content: space-between;
   align-items:center;
   height:200px;
+  font-size: 2rem;
 }
 .left{
   width:100%;
-  background-color:#343A40 ;
+  /* background-color:#343A40 ; */
+  font-size: 3rem;
   padding:.5rem;
+  text-align:center;
   border-radius:10px 0 0 10px;
   height:220px;
   line-height:3;
@@ -69,16 +72,14 @@ input, .btn{
 
 }
 .icon{
-border:1px solid #E1E8EB ;
-background:#E1E8EB;
+/* background:#E1E8EB; */
 height:85px;
   padding: .5rem;
   border-radius:0 10px 0 0;
-  color:#04009A;
 }
 .condition{
   height:135px;
-      background:#04009A ;
+      /* background:#04009A ; */
   padding: .5rem;
    border-radius:0 0 10px;
   color:#F0EBCC;
