@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import requests
-
+import datetime
 # Create your views here.
 def index(request):
     appid = "ceb11f89fa585275330e6bab76e3d428"
@@ -12,9 +12,9 @@ def index(request):
     icon = res['weather'][0]['icon']
     temp = res['main']['temp']
 
+    day = datetime.date.today()
 
 
 
 
-
-    return render(request, 'weatherapp/index.html', {'description':description, 'icon':icon, 'temp':temp})
+    return render(request, 'weatherapp/index.html', {'description':description, 'icon':icon, 'temp':temp, 'day':day})
